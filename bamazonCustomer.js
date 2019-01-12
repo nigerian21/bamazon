@@ -13,3 +13,9 @@ var connection = mysql.createConnection({
     password: "owolideefe900",
     database: "bamazon"
   });
+  connection.connect(function(err) {
+    if (err) throw err;
+    console.log("connected as id " + connection.threadId);
+    afterConnection();
+  });
+  
