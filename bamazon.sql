@@ -1,4 +1,3 @@
-
 DROP DATABASE IF EXISTS bamazon_DB;
 CREATE DATABASE bamazon_DB;
 
@@ -13,13 +12,13 @@ item_id int(15) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (item_ID)
 );
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Xbox one","Electronics", 200.00, 28 );
+VALUES ("Xbox one","Electronics", 200, 28 );
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Ps4","Electronics", 300.00, 15 );
+VALUES ("Ps4","Electronics", 300, 15 );
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Yeezy's","Shoes", 400.00, 2 );
+VALUES ("Yeezy's","Shoes", 400, 2 );
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Jordan 13's","Shoes", 250.00, 9 );
+VALUES ("Jordan 13's","Shoes", 250, 9 );
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Shea Moisture","Hair products", 6.00, 213 );
 INSERT INTO products (product_name, department_name, price, stock_quantity)
@@ -30,7 +29,5 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Red Dead Redemption 2","Video Games", 59.00, 402 );
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Blender","Appliances", 19.99, 59 );
-INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("50 Inch Tv","Electronics", 599.00, 21 );
 
 SELECT * FROM products
